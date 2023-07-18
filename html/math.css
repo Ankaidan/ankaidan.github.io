@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: #000000;
     color: #ffffff;
     align-items: center;
@@ -8,5 +8,5 @@ header {
 
   body {
     text-align:center;
-    
+
   }
