@@ -33,10 +33,8 @@ body {
   font-size: x-large;
 }
 
-.box .green{
-  background: #00aa00;
-}
-
-.box .brown{
-  background: #a05a2c
-}
+.box .green {background: #00aa00}
+.box .brown {background: #a05a2c}
+.box .red   {background: #ff0000}
+.box .orange{background: #ff7f2a}
+.box .blue  {background: #00aad4}
