@@ -1,12 +1,42 @@
 header {
     width: 100%;
-    height: 200px;
-    background-color: #000000;
-    color: #ffffff;
+    height: 250px;
+    background-color: #000;
+    color: #fff;
     align-items: center;
   }
 
-  body {
-    text-align:center;
+body {
+  text-align:center;
+}
 
-  }
+.name{
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.box {
+  margin: 2em 0;
+  background: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+
+.box .box-title{
+  font-size: x-large;
+  padding: 4px;
+  color: #FFF;
+  font-weight: bold;
+}
+.box p {
+  padding: 15px 20px;
+  margin: 0;
+  font-size: x-large;
+}
+
+.box .green{
+  background: #00aa00;
+}
+
+.box .brown{
+  background: #a05a2c
+}
