@@ -58,10 +58,20 @@ body {
   padding: 1vw 4vw;
   background: #000;
   color: #fff;
+  font-size: 3vw;
+  border-radius: 10px;
 }
 
-.box .green {background: #00aa00}
-.box .brown {background: #a05a2c}
-.box .red   {background: #ff0000}
-.box .orange{background: #ff7f2a}
-.box .blue  {background: #00aad4}
+footer {
+  height: 200px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: auto;
+}
+
