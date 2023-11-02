@@ -1,0 +1,21 @@
+body{
+  font-size: 3vw;
+}
+
+header {
+  background-color: #08ac0d;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+th,td {
+  border: solid 1px;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+}
