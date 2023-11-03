@@ -19,3 +19,11 @@ table {
   text-align: center;
   border-collapse: collapse;
 }
+
+.index{
+  font-size: 4vw;
+}
+
+.symbol{
+  height: 4vw;
+}
