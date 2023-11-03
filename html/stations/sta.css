@@ -1,5 +1,5 @@
 body{
-  font-size: 3vw;
+  font-size: 5vw;
 }
 
 header {
@@ -20,10 +20,6 @@ table {
   border-collapse: collapse;
 }
 
-.index{
-  font-size: 4vw;
-}
-
-.symbol{
-  height: 4vw;
+img.symbol{
+  height: 5vw;
 }
