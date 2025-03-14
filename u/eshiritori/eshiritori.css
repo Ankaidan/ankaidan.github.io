@@ -1,0 +1,40 @@
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+  }
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* text-align:center; */
+  justify-content: center;
+  font-size: 4.2vw;
+}
+
+.e {
+  text-align: center;
+}
+.e img {
+  font-size: 1px;
+  border: solid 1px #777777;
+  width: 60%;
+}
+
+table, td, tr, th{
+  /* border: #000 solid 2px; */
+  border-collapse: collapse;
+  margin: auto;
+  padding: 4px;
+  font-size: 3.5vw
+}
+
+input[type="checkbox"]:checked + p{
+  display:block;
+}
