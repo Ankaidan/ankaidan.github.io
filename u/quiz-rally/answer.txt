@@ -1,0 +1,4 @@
+Ikegami-1 -> \frac{8}{3}\pi
+Ikegami-2 -> 0.5
+Ikegami-3 -> 10624
+Ikegami-4 -> \frac{4}{5}

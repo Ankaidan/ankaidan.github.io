@@ -1,0 +1,189 @@
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+  }
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align:center;
+  font-size: 4.2vw;
+}
+
+.name{
+  font-size: 200%;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.stamp{
+  margin:  0;
+  padding: 0;
+}
+
+.box {
+  margin: 2em 0;
+  background: #f1f1f1;
+  box-shadow: 0 2px 4px #333;
+}
+
+.box .box-title{
+  padding: 0.5ex;
+  color: #FFF;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.box p {
+  padding: 1em 0;
+  margin: 0;
+  font-family: serif;
+}
+
+.box .green {background: #00aa00}
+.box .brown {background: #a05a2c}
+.box .red   {background: #ff0000}
+.box .orange{background: #ff7f2a}
+.box .blue  {background: #00aad4}
+.box .purple{background: #b380ff}
+
+.fixed_btn{
+  position: fixed;
+  top: 2vw; 
+  right: 2vw;
+  padding: 1vw 4vw;
+  background: #000;
+  color: #fff;
+  font-size: 7vw;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #000;
+}
+footer ul{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: auto;
+}
+
+footer p {
+  font-size: 2.5vw;
+  color: #fff;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 2vw;
+}
+
+.quiz table{
+  text-align: left;
+  margin:auto;
+}
+.quiz span{
+  border: solid 3px;
+}
+
+.score td{
+  border: solid 1px;
+  padding: 0px 20px;
+}
+.score th{
+  border: solid 3px;
+  padding: 0px 10px
+}
+table.score {
+  border: solid 3px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.item {
+  text-align: left;
+}
+
+p .number {
+  border-radius: 1em;
+  border: 0.1em solid #2ca089;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+}
+
+.int table{
+  text-align: left;
+  overflow-x: scroll;
+}
+
+.int .i-box {
+  border: 1px solid #000;
+}
+
+.main {
+  text-align: left;
+  font-size: 3vw;
+  background-color: #000;
+}
+
+.m-box {
+  background-color: #FFF;
+  border-radius: 20pt;
+  padding: 5pt;
+  margin: 20pt;
+}
+
+.m-box .box-title{
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: #f00;
+  border-top-left-radius: 20pt;
+  border-top-right-radius: 20pt;
+  margin: -5pt;
+}
+
+.m-box table, td, tr, th{
+  border: #000 solid 2px;
+  border-collapse: collapse;
+  margin: 20px;
+}
+.m-box .t-head{
+  text-align: center;
+}
+
+.number_circle{
+  font-size: 4vw;
+}
+
+.QR_DENSO {
+  color: #FFF;
+}
+
+.link {
+  text-align:center;
+  font-size: 4.5vw;
+}
+
+.link button{
+  width: 47vw;
+  margin:0 auto;
+  margin-bottom: 2vw;
+}
+
+.hint p{
+  display:none;
+}
+
+input[type="checkbox"]:checked + p{
+  display:block;
+}
+.cbox{
+  transform: scale(2);
+}
