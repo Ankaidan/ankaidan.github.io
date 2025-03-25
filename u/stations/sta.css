@@ -1,0 +1,38 @@
+body {
+  font-size: 1.0rem;;
+}
+
+header {
+  background-color: #08ac0d;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+th,td {
+  border: solid 1px;
+  padding:0px 5px;
+  text-align: left;
+  img.status{
+    margin-bottom: -8px;
+    margin-top: 0px;
+  }
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+}
+img.symbol{
+  height: 1.0rem;
+  vertical-align:text-bottom;
+}
+
+body.index{
+  img.symbol{
+    height: 1.2rem;
+  }
+}
