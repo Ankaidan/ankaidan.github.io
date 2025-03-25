@@ -25,6 +25,8 @@ table {
   text-align: center;
   border-collapse: collapse;
   margin: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 img.symbol{
   height: 1.0rem;
