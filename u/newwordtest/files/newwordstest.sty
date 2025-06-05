@@ -1,0 +1,88 @@
+\ProvidesPackage{./files/mywordstest}[2024/07/09 a tool for making words tests]
+
+\usepackage{amsmath,amssymb}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{shadowtext}
+\usepackage{textgreek}
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
+
+\definecolor{markred}{rgb}{1,0.6,0.6}
+\newcommand{\anscolor}{white}
+\renewcommand{\thesection}{\arabic{section}.}
+\newcommand{\maru}[1]{\raisebox{0.15ex}{\textcircled{\small\raisebox{-0.087ex}{#1}}}}
+\setlength{\parindent}{0pt}
+
+\newcounter{question}
+\setcounter{question}{1}
+\newcommand{\blank}[1][]{[#1\qquad]\:}
+\newcommand{\tmpscale}[2]{#2}
+\newcommand{\JtoE}[9]{%
+  \begin{minipage}[c]{175mm}
+    \large
+    (\thequestion) #1\qquad#2\quad $\langle#9\rangle$\\
+    \quad\maru{1}\,#3\quad \maru{2}\,#4\quad \maru{3}\,#5\quad \maru{4}\,#6
+    % \hfill \underline{(\thequestion)\hspace*{20mm}}\addtocounter{question}{1}
+    \hfill \underline{(\thequestion)\rlap{\color{\anscolor}\quad#8\;\maru{#7}}\hspace*{20mm}}\addtocounter{question}{1}
+  \end{minipage}\\[2ex]
+}
+\newcommand{\EW}[4]{%
+  \begin{minipage}[c]{175mm}
+    \large
+    (\thequestion) #1\qquad#2\quad $\langle#4\rangle$\\
+    % \hfill \underline{(\thequestion)\hspace*{40mm}}\addtocounter{question}{1}
+    \hfill \underline{(\thequestion)\rlap{\quad\;\color{\anscolor}{#3}}\hspace*{40mm}}\addtocounter{question}{1}
+  \end{minipage}\\[2ex]
+}
+
+\newcommand{\EtoJ}[4][1]{%
+  \if 1#1%
+    \renewcommand{\tmpscale}[2]{##2}
+  \else
+    \renewcommand{\tmpscale}[2]{\scalebox{##1}[1]{##2}}
+  \fi
+  \begin{minipage}[c]{175mm}
+    \large
+    (\thequestion) \tmpscale{#1}{#2}\quad $\langle#4\rangle$\\
+    % \hfill \underline{(\thequestion)\hspace*{40mm}}\addtocounter{question}{1}
+    \hfill \underline{(\thequestion)\rlap{\quad\;\color{\anscolor}{#3}}\hspace*{40mm}}\addtocounter{question}{1}
+  \end{minipage}\\[2ex]
+}
+
+\usepackage{xparse}
+\NewDocumentCommand{\TitleHead}{O{} O{} m O{} O{}}{
+  \centerline{\huge\sffamily 第{#3}回　英単語テスト}
+  \bigskip
+  \hfill
+  \begin{tabular}{|r|r|l|r|}
+    \hline
+    \rule[0mm]{0mm}{10mm}\qquad\llap{\LARGE #4 }年\qquad\llap{\LARGE #5 }組 & \hspace*{9mm}\llap{\LARGE #2 }番& 氏名\rlap{\quad \LARGE #1}\hspace*{50mm}&\hspace{15mm}\llap{\color{\anscolor}\Huge\ref{count:score}\hspace{0.8ex}}点\\
+    \hline
+  \end{tabular}
+  \bigskip
+}
+
+\NewDocumentCommand{\TitleHeadP}{O{} O{} m O{} O{}}{
+  \centerline{\huge\sffamily 第{#3}回　英熟語テスト}
+  \bigskip
+  \hfill
+  \begin{tabular}{|r|r|l|r|}
+    \hline
+    \rule[0mm]{0mm}{10mm}\qquad\llap{\LARGE #4 }年\qquad\llap{\LARGE #5 }組 & \hspace*{9mm}\llap{\LARGE #2 }番& 氏名\rlap{\quad \LARGE #1}\hspace*{50mm}&\hspace{15mm}\llap{\color{\anscolor}\Huge\ref{count:score}\hspace{0.8ex}}点\\
+    \hline
+  \end{tabular}
+  \bigskip
+}
+
+\newcounter{correct}
+\setcounter{correct}{0}
+\newcommand{\correct}[1][]{\smash{\rlap{\raisebox{-2ex}{\includegraphics[scale=2]{./data/correct.pdf}}}} {\color{black}\large #1}\addtocounter{correct}{1}\color{black}}
+\newcommand{\incorrect}[2][]{\smash{\rlap{\raisebox{-2ex}{\includegraphics[scale=2]{./data/incorrect.pdf}}}} {{\color{black}\large \rlap{\smash{\raisebox{2.5ex}{\color{\anscolor}#1}}}#2 }\quad }}
+
+
+\newcommand{\papaya}{\shadowtext{\sffamily\bfseries{\color{RedOrange}p}{\color{Red}a}{\color{YellowOrange}p}{\color{green}a}{\color{RoyalBlue}y}{\color{RoyalPurple}a}}}
+% \newcommand{\papaya}{papaya}
+\newcommand{\shiro}{\hspace*{30mm}}
+\newcommand{\comm}[1]{\begin{minipage}{40mm}\color{\anscolor}\tiny #1\end{minipage}}
