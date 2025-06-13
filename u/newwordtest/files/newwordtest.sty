@@ -1,5 +1,7 @@
-\ProvidesPackage{./files/newwordtest}[2024/07/09 a tool for making words tests]
+\ProvidesPackage{./files/newwordtest}[2025/06/06 a new tool for making words tests]
 
+
+\usepackage{luacode}
 \usepackage{amsmath,amssymb}
 \usepackage{ulem}
 \usepackage{graphicx}
@@ -78,11 +80,135 @@
 
 \newcounter{correct}
 \setcounter{correct}{0}
-\newcommand{\correct}[1][]{\smash{\rlap{\raisebox{-2ex}{\includegraphics[scale=2]{./data/correct.pdf}}}} {\color{black}\large #1}\addtocounter{correct}{1}\color{black}}
-\newcommand{\incorrect}[2][]{\smash{\rlap{\raisebox{-2ex}{\includegraphics[scale=2]{./data/incorrect.pdf}}}} {{\color{black}\large \rlap{\smash{\raisebox{2.5ex}{\color{\anscolor}#1}}}#2 }\quad }}
+\newcommand{\correct}[1][]{\smash{\rlap{\raisebox{-2ex}{\includegraphics[scale=2]{./files/correct.pdf}}}} {\color{black}\large #1}\addtocounter{correct}{1}\color{black}}
+\newcommand{\incorrect}[2][]{\smash{\rlap{\raisebox{-2ex}{\includegraphics[scale=2]{./files/incorrect.pdf}}}} {{\color{black}\large \rlap{\smash{\raisebox{2.5ex}{\color{\anscolor}#1}}}#2 }\quad }}
 
 
 \newcommand{\papaya}{\shadowtext{\sffamily\bfseries{\color{RedOrange}p}{\color{Red}a}{\color{YellowOrange}p}{\color{green}a}{\color{RoyalBlue}y}{\color{RoyalPurple}a}}}
 % \newcommand{\papaya}{papaya}
 \newcommand{\shiro}{\hspace*{30mm}}
 \newcommand{\comm}[1]{\begin{minipage}{40mm}\color{\anscolor}\tiny #1\end{minipage}}
+
+
+
+
+\newcommand{\jpsen@wordtest}{}
+\newcommand{\ensen@wordtest}{}
+
+%\nJtoE{<番号>}{<受験者の解答>}{単語(rand)}{単語(rand)}{単語(rand)}{単語(rand)}{<正答>}
+% \JtoE{<英語例文>}{<和訳>}{単語(rand)}{単語(rand)}{単語(rand)}{単語(rand)}{<正答>}{<受験者の解答>}{<番号>}
+\newcommand{\nJtoE}[7]{\luadirect{nJtoE("#1","#2","#3","#4","#5","#6","#7")}}
+\newcommand{\nEW}[4]{\luadirect{nEW("#1","#2","#3","#4")}} %(番号、受験者の解答、T/F、コメント)%正答
+\newcommand{\nEtoJ}[4]{\luadirect{nEtoJ("#1","#2","#3","#4")}} %(番号、受験者の解答、T/F、コメント)%正答
+
+% \EtoJ{\underline{cope well with} the baby}{うまく対処する}{861}
+
+
+
+\begin{luacode*}
+
+function csv2list(filepath)
+    local file = io.open(filepath, "r")
+    if not file then
+        print("Error: Could not open file " .. filepath)
+        return nil
+    end
+
+    local data = {} -- 二次元リストとなるテーブル
+
+    for line in file:lines() do
+        local row = {} -- 各行のデータを格納するテーブル
+        -- カンマで文字列を分割
+        for field in string.gmatch(line .. "\t", "([^\t]*)\t") do
+            table.insert(row, field)
+        end
+        table.insert(data, row)
+    end
+
+    file:close()
+    return data
+end
+
+--ここからメイン
+function nJtoE(num, ans, w1, w2, w3, w4, cor)
+    local num_index = 0
+    local csv_file = "./files/kamitango.tsv"
+    local csv_data = csv2list(csv_file)
+    local output = "\\JtoE{"
+    for i, row in ipairs(csv_data) do
+        if row[1] == num then
+            if row[5] == "" then
+                output = output .. row[2] .. "}{" .. row[3]
+            else
+                output = output .. string.gsub(row[5],"\\enword{.*}","\\blank") .. "}{" .. string.gsub(row[6], "\\jpword{([^}]*)}{[^}]*}", "%1", 1)
+            end
+            output = output.."}{"..w1.."}{"..w2.."}{"..w3.."}{"..w4.."}{"..cor.."}{"
+            if ans == cor then
+                output = output.."\\correct"
+            elseif ans ~= "" then
+                output = output.."\\incorrect{\\maru{"..ans.."}}"
+            end
+            output = output.."}{"..num.."}"
+            break
+        end
+    end
+    tex.sprint(output)
+end
+
+function nEW(num, ans, tf, comm)
+    local csv_file = "./files/kamitango.tsv"
+    local csv_data = csv2list(csv_file)
+    local mkd_ans = ans
+    local output = "\\EW{"
+    for i, row in ipairs(csv_data) do
+        if row[1] == num then
+            if tf == "T" then
+                mkd_ans = "\\correct["..ans.."]"
+            elseif tf == "F" then
+                mkd_ans = "\\incorrect["..string.match(row[5],"\\enword{([^}]*)}").."]{"..ans.."}"
+            elseif tf == "" then
+                if row[5] ~= "" then
+                    mkd_ans = string.match(row[5],"\\enword{([^}]*)}")
+                else 
+                    mkd_ans = row[2]
+                end
+            end
+            mkd_ans = mkd_ans.."\\comm{"..comm.."}"
+            if row[5] == "" then
+                output = output .. row[2] .. "}{" .. row[3].."}{"..mkd_ans.."}{"..num.."}"
+            else
+                output = output .. string.gsub(row[5],"\\enword{(.).*}","\\blank[%1]") .. "}{" .. string.gsub(row[6], "\\jpword{([^}]*)}{([^}]*)}", "%1%2", 1).."}{"..mkd_ans.."}{"..num.."}"
+            end
+            break
+        end
+    end
+    tex.sprint(output)
+end
+
+function nEtoJ(num, ans, tf, comm)
+    local csv_file = "./files/kamitango.tsv"
+    local csv_data = csv2list(csv_file)
+    local mkd_ans = ans
+    local output = "\\EtoJ{"
+    for i, row in ipairs(csv_data) do
+        if row[1] == num then
+            if tf == "T" then
+                mkd_ans = "\\correct["..ans.."]"
+            elseif tf == "F" then
+                mkd_ans = "\\incorrect["..string.gsub(row[6],".*\\jpword{([^}]*)}{([^}]*)}.*","%1%2",1).."]{"..ans.."}"
+            elseif tf == "" then
+                mkd_ans = string.gsub(row[6],".*\\jpword{([^}]*)}{([^}]*)}.*","%1%2",1)
+            end
+            mkd_ans = mkd_ans.."\\comm{"..comm.."}"
+            if row[5] == "" then
+                output = output .. row[2] .. "}{"..mkd_ans.."}{"..num.."}"
+            else
+                output = output .. string.gsub(row[5],"\\enword{([^}]*)}","\\underline{%1}",1) .. "}{"..mkd_ans.."}{"..num.."}"
+            end
+            break
+        end
+    end
+    tex.sprint(output)
+end  
+
+\end{luacode*}

@@ -1,9 +1,9 @@
 番号	英単語	和訳	処理用	例文1（英語）	例文1（日本語）
-1					
-2					
+1	telecommute	在宅勤務する		\enword{telecommute} instead of going to the office	オフィスに行く代わりに\jpword{在宅勤務する}
+2	remotely	遠くで・（否定文で）まったく〜ない			
 3					
 4					
-5					
+5	outsource	外部に委託する		This work should be \enword{outsourced} in order to increase productivity.	生産性を向上させるためには、この作業は\jpword{外注す}{る}べきである。
 6					
 7					
 8					
@@ -16,7 +16,7 @@
 15					
 16					
 17					
-18					
+18	electronically	コンピューター上で・オンラインで		Your report can be submitted \enword{electronically}.	レポートは\jpword{オンラインで}{（電子的に）}提出できます．
 19					
 20					
 21					
@@ -34,11 +34,11 @@
 33					
 34					
 35					
-36					
+36	single-use	使い捨ての		Suppose you cannot use any \enword{single-use} items. How would your life change?	仮に\jpword{使い捨ての}{}ものは一切使えないとする。あなたの生活はどう変わるだろうか？
 37					
 38					
 39					
-40					
+40	vegan	ヴィーガン／ヴィーガンの		This field would help solve food problems as well as \enword{vegans}.	この分野は\jpword{ヴィーガン}{}だけでなく、食糧問題の解決にも助けになるだろう。
 41					
 42					
 43					
@@ -49,15 +49,15 @@
 48					
 49					
 50					
-51					
+51	utensil	（主に台所の）用具		I have not yet prepared any cooking \enword{utensils} since I moved here.	こちらに来てから、まだ調理\jpword{器具}{}を用意していない。
 52					
 53					
-54					
-55					
+54	document	書類・文書／記録する		All I have to do now is \enword{document} what has been decided.	私が今やらなければならないのは、何が決まったかを\jpword{文書化する}{}ことだ。
+55	material	材料・資料・生地		gather \enword{material} for the word test	単語テストのための\jpword{資料}{}を集める
 56					
 57					
 58					
-59					
+59	garment	衣服		This is the finest \enword{garment} we have.	これは当店で最高級の\jpword{衣服}{}です．
 60					
 61					
 62					
@@ -65,8 +65,8 @@
 64					
 65					
 66					
-67					
-68					
+67	upcoming	やってくる・今度の			
+68	appointment	（人と会う）約束・（病院の）予約・任命			
 69					
 70					
 71					
@@ -76,7 +76,7 @@
 75					
 76					
 77					
-78					
+78	launch	発売する・開始する／発売・開始			
 79					
 80					
 81					
@@ -88,24 +88,24 @@
 87					
 88					
 89					
-90					
+90	bill	請求書・勘定書・法案／請求書を送る			
 91					
 92					
-93					
+93	utility	実用性・公共事業			
 94					
-95					
+95	contract	契約（書）／契約する			
 96					
 97					
 98					
 99					
-100					
+100	transfer	移る・移す／転送する／乗り換える			
 101					
 102					
 103					
-104					
+104	confidential	秘密の・機密の			
 105					
 106					
-107					
+107	renew	更新する			
 108					
 109					
 110					
@@ -120,9 +120,9 @@
 119					
 120					
 121					
-122					
+122	event	場合・出来事・イベント			
 123					
-124					
+124	initial	最初の・当初の／イニシャル・頭文字			
 125					
 126					
 127					
@@ -137,13 +137,13 @@
 136					
 137					
 138					
-139					
+139	count	数える・重要である・（coount on \textasciitilde で）頼る／総数			
 140					
 141					
 142					
 143					
 144					
-145					
+145	represent	表す・代表する			
 146					
 147					
 148					
@@ -152,22 +152,22 @@
 151					
 152					
 153					
-154					
+154	accompany	付き添う・伴う			
 155					
-156					
+156	replace	取り替える・取って代わる・〜の後任となる			
 157					
 158					
 159					
 160					
 161					
 162					
-163					
+163	sample	サンプル・見本／試す・試食する			
 164					
 165					
 166					
 167					
 168					
-169					
+169	track	跡・道／跡を追う・追跡する・記録する			
 170					
 171					
 172					
@@ -177,20 +177,20 @@
 176					
 177					
 178					
-179					
+179	forward	前方に／送る・転送する			
 180					
-181					
+181	volunteer	ボランティアをする・進んで申し出る／ボランティア			
 182					
-183					
+183	seal	印鑑・封印／封をする			
 184					
 185					
 186					
 187					
 188					
-189					
+189	design	設計する・意図する・狙う／デザイン			
 190					
 191					
-192					
+192	staff	スタッフ・職員／職員を配置する			
 193					
 194					
 195					
