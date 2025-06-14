@@ -65,8 +65,8 @@
 64					
 65					
 66					
-67	upcoming	やってくる・今度の			
-68	appointment	（人と会う）約束・（病院の）予約・任命			
+67	upcoming	やってくる・今度の		The upcoming repair work will \enword{repair} a leak in the roof.	\jpword{今度の}{}補修工事では、屋根の雨漏りを修理する。
+68	appointment	（人と会う）約束・（病院の）予約・任命		I have to leave here because of a dentist \enword{appointment}.	歯医者の\jpword{予約}{}があるから帰らないといけない。
 69					
 70					
 71					
@@ -76,7 +76,7 @@
 75					
 76					
 77					
-78	launch	発売する・開始する／発売・開始			
+78	launch	発売する・開始する／発売・開始		The first hydrogen fuel cell electric vehicle was \enword{launched} by Toyota in 2014.	最初の水素燃料電池電気自動車は、トヨタが2014年に\jpword{発売した}{}。
 79					
 80					
 81					
@@ -88,10 +88,10 @@
 87					
 88					
 89					
-90	bill	請求書・勘定書・法案／請求書を送る			
-91					
+90	invoice	請求書		We have sent you an \enword{invoice}, please check it.	\jpword{請求書}{}を送りましたので、ご確認ください。
+91	bill	請求書・勘定書・法案／請求書を送る			
 92					
-93	utility	実用性・公共事業			
+93	utility	実用性・公共事業		\scalebox{0.95}[1]{The Osaka Expo is said to be generating enormous economic benefits in terms of \enword{utilities}.}	大阪万博は、\jpword{公共事業}{}の面で莫大な経済効果を生み出していると言われている。
 94					
 95	contract	契約（書）／契約する			
 96					
