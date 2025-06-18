@@ -91,9 +91,9 @@
 90	invoice	請求書		We have sent you an \enword{invoice}, please check it.	\jpword{請求書}{}を送りましたので、ご確認ください。
 91	bill	請求書・勘定書・法案／請求書を送る			
 92					
-93	utility	実用性・公共事業		\scalebox{0.95}[1]{The Osaka Expo is said to be generating enormous economic benefits in terms of \enword{utilities}.}	大阪万博は、\jpword{公共事業}{}の面で莫大な経済効果を生み出していると言われている。
+93	utility	実用性・公共事業		The Osaka Expo is said to be generating enormous economic benefits in terms of \enword{utilities}.	大阪万博は、\jpword{公共事業}{}の面で莫大な経済効果を生み出していると言われている。
 94					
-95	contract	契約（書）／契約する			
+95	contract	契約（書）／契約する		rice transactions under negotiated \enword{contracts}	随時\jpword{契約}{}によるコメの取引
 96					
 97					
 98					
