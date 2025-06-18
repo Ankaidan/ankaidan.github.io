@@ -46,11 +46,11 @@ function nJtoE(num, ans, w1, w2, w3, w4, cor)
     return(output)
 end
 
-function nEW(num, ans, tf, comm)
+function nEW(num, ans, tf, comm, scale)
     local csv_file = "./files/kamitango.tsv"
     local csv_data = csv2list(csv_file)
     local mkd_ans = ans
-    local output = "\\EW{"
+    local output = "\\EW{\\scalebox{"..scale.."}[1]{"
     for i, row in ipairs(csv_data) do
         if row[1] == num then
             if tf == "T" then
@@ -66,9 +66,9 @@ function nEW(num, ans, tf, comm)
             end
             mkd_ans = mkd_ans.."\\comm{"..comm.."}"
             if row[5] == "" then
-                output = output .. row[2] .. "}{" .. row[3].."}{"..mkd_ans.."}{"..num.."}"
+                output = output .. row[2] .. "}}{" .. row[3].."}{"..mkd_ans.."}{"..num.."}"
             else
-                output = output .. string.gsub(row[5],"\\enword{(.).*}","\\blank[%1]") .. "}{" .. string.gsub(row[6], "\\jpword{([^}]*)}{([^}]*)}", "%1%2", 1).."}{"..mkd_ans.."}{"..num.."}"
+                output = output .. string.gsub(row[5],"\\enword{(.).*}","\\blank[%1]") .. "}}{" .. string.gsub(row[6], "\\jpword{([^}]*)}{([^}]*)}", "%1%2", 1).."}{"..mkd_ans.."}{"..num.."}"
             end
             break
         end
@@ -76,11 +76,11 @@ function nEW(num, ans, tf, comm)
     return(output)
 end
 
-function nEtoJ(num, ans, tf, comm)
+function nEtoJ(num, ans, tf, comm, scale)
     local csv_file = "./files/kamitango.tsv"
     local csv_data = csv2list(csv_file)
     local mkd_ans = ans
-    local output = "\\EtoJ{"
+    local output = "\\EtoJ["..scale.."]{"
     for i, row in ipairs(csv_data) do
         if row[1] == num then
             if tf == "T" then
@@ -106,7 +106,8 @@ end
 
 
 
-print(nEW("6","ans","","comm"))
+print(nEW("1","ans","","comm","0.5"))
+print(nEtoJ("2","ans","T","comm","0.5"))
 -- \EtoJ{<英語例文>}{<正答>}{<番号>}
 -- \nEtoJ{<番号>}{<受験者の解答>}{<正誤>}{<コメント>}
 -- \EW{<英語例文>}{<和訳>}{<正答>}{<番号>}
