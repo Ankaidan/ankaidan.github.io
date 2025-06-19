@@ -94,9 +94,14 @@ summary {
   cursor: pointer;
   transition: 0.2s; /* 変化を滑らかに */
   margin: 10px;
+  text-indent: -2em;
 }
 /* ホバー時のスタイル */
 summary:hover {
   cursor: pointer; /* カーソルを指マークに */
   background-color: #303030;
+}
+
+details {
+  padding-left: 2em;
 }

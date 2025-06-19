@@ -98,11 +98,11 @@
 97					
 98					
 99					
-100	transfer	移る・移す／転送する／乗り換える			
+100	transfer	移る・移す／転送する／乗り換える		What if I \enword{transfer} to a school abroad, what will my friends do?	私が海外の学校に\jpword{転校}{する}したら、友達はどうするのでしょうか？
 101					
 102					
 103					
-104	confidential	秘密の・機密の			
+104	confidential	秘密の・機密の		This vulnerability could result in the leakage of \enword{confidential} information such as customer information.	この脆弱性が原因で、顧客情報などの\jpword{機密情報}{}が流出する可能性がある。
 105					
 106					
 107	renew	更新する			
