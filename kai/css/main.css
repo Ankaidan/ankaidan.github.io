@@ -3,6 +3,7 @@ body {
   background:#000000;
   font-size: 12pt;
   text-align: center;
+  font-family: "Noto Sans CJK JP", "Noto Sans JP", "Yu Gothic";
 }
 
 /* body.top {

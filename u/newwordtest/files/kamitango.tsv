@@ -65,7 +65,7 @@
 64					
 65					
 66					
-67	upcoming	やってくる・今度の		The upcoming repair work will \enword{repair} a leak in the roof.	\jpword{今度の}{}補修工事では、屋根の雨漏りを修理する。
+67	upcoming	やってくる・今度の		The \enword{upcoming} repair work will repair a leak in the roof.	\jpword{今度の}{}補修工事では、屋根の雨漏りを修理する。
 68	appointment	（人と会う）約束・（病院の）予約・任命		I have to leave here because of a dentist \enword{appointment}.	歯医者の\jpword{予約}{}があるから帰らないといけない。
 69					
 70					
@@ -105,7 +105,7 @@
 104	confidential	秘密の・機密の		This vulnerability could result in the leakage of \enword{confidential} information such as customer information.	この脆弱性が原因で、顧客情報などの\jpword{機密情報}{}が流出する可能性がある。
 105					
 106					
-107	renew	更新する			
+107	renew	更新する		The station was crowded with people seeking to \enword{renew} their commuter passes.	駅は定期券の\jpword{更新}{する}を求める人々で混雑していた。
 108					
 109					
 110					
@@ -120,9 +120,9 @@
 119					
 120					
 121					
-122	event	場合・出来事・イベント			
+122	event	場合・出来事・イベント		Watch your step in the \enword{event} of a large outbreak of millipedes.	ヤスデが大量発生した\jpword{場合}{}は、足元に注意してください。
 123					
-124	initial	最初の・当初の／イニシャル・頭文字			
+124	initial	最初の・当初の／イニシャル・頭文字		The purpose of this research is different from the \enword{initial} one.	この研究の目的は\jpword{当初の}{}ものとは異なる。
 125					
 126					
 127					
@@ -137,13 +137,13 @@
 136					
 137					
 138					
-139	count	数える・重要である・（coount on \textasciitilde で）頼る／総数			
+139	count	数える・重要である・（count on \textasciitilde で）頼る／総数		Positive attitudes \enword{count} for much in group work.	グループワークでは、積極的な態度が\jpword{重要である}{}．
 140					
 141					
 142					
 143					
 144					
-145	represent	表す・代表する			
+145	represent	表す・代表する		He stated it as if he \enword{represented} all human beings.	彼はまるで自分がすべての人間を\jpword{代表}{する}しているかのように述べた。
 146					
 147					
 148					
@@ -152,22 +152,22 @@
 151					
 152					
 153					
-154	accompany	付き添う・伴う			
+154	accompany	付き添う・伴う		Photo of eruption \enword{accompanied} by lightning	雷を\jpword{伴う}{}噴火の写真
 155					
-156	replace	取り替える・取って代わる・〜の後任となる			
+156	replace	取り替える・取って代わる・〜の後任となる		We need to \enword{replace} all the PCs in this company soon.	近々、社内のPCをすべて\jpword{取り替える}{}必要がある。
 157					
 158					
 159					
 160					
 161					
 162					
-163	sample	サンプル・見本／試す・試食する			
+163	sample	サンプル・見本／試す・試食する		You can \enword{sample} the ice over there! Let's go. --- Ice...?	あそこで氷の\jpword{試食}{する}ができる！行こう！ --- 氷...？
 164					
 165					
 166					
 167					
 168					
-169	track	跡・道／跡を追う・追跡する・記録する			
+169	track	跡・道／跡を追う・追跡する・記録する		He \enword{tracked} a hornet by tagging it.	彼はスズメバチにタグを付けて\jpword{追跡}{する}した。
 170					
 171					
 172					
@@ -177,20 +177,20 @@
 176					
 177					
 178					
-179	forward	前方に／送る・転送する			
+179	forward	前方に／送る・転送する		This means \enword{forwarding} the email to everyone listed here.	これは、ここにリストアップされている全員にメールを\jpword{転送する}{}ことを意味する。
 180					
-181	volunteer	ボランティアをする・進んで申し出る／ボランティア			
+181	volunteer	ボランティアをする・進んで申し出る／ボランティア		She \enword{volunteered} to talk to me.	彼女は\jpword{自ら進んで}{〜する}私に話しかけてきた。
 182					
-183	seal	印鑑・封印／封をする			
+183	seal	印鑑・封印／封をする		\ruby{Ivory}{象牙} is consumed in Japan for \enword{seals}.	日本では\jpword{印鑑}{}用に象牙が消費されている。
 184					
 185					
 186					
 187					
 188					
-189	design	設計する・意図する・狙う／デザイン			
+189	design	設計する・意図する・狙う／デザイン		The satellite \enword{designed} by the students will be launched next year.	学生たちが\jpword{設計}{する}した衛星は来年打ち上げられる。
 190					
 191					
-192	staff	スタッフ・職員／職員を配置する			
+192	staff	スタッフ・職員／職員を配置する		She will be \enword{staffed} as a receptionist next month.	彼女は来月から受付に\jpword{配属}{する}される。
 193					
 194					
 195					
