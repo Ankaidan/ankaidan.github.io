@@ -2,10 +2,9 @@
 
 import csv
 import random
-import re
 
-RANGE_MIN=1
-RANGE_MAX=200
+RANGE_MIN=201
+RANGE_MAX=400
 
 JtoE=5
 EtoJ=20
