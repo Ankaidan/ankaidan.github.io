@@ -3,7 +3,7 @@ body {
   background:#000000;
   font-size: 12pt;
   text-align: center;
-  font-family: "Noto Sans CJK JP", "Noto Sans JP", "Yu Gothic";
+  font-family: "Noto Sans CJK JP", "Noto Sans JP", "Yu Gothic", sans-serif;
 }
 
 /* body.top {
@@ -86,7 +86,7 @@ a:hover {color: #9999ff;text-decoration: underline;}
 
 .title{
   font-size: xx-large;
-  font-family: "Noto Serif CJK JP","Noto Serif JP", "Yu Mincho";
+  font-family: "Noto Serif CJK JP","Noto Serif JP", "Yu Mincho", serif;
   font-weight: bold;
   text-align: center;
 }
