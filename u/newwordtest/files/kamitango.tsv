@@ -211,20 +211,20 @@
 210					
 211					
 212					
-213	interview	面接／／面接する・面接を受ける			
+213	interview	面接／／面接する・面接を受ける		He is absent today because he has a job \enword{interview}.	彼は今日、就職\jpword{面接}{}があるため欠席しています。
 214					
-215	install	取り付ける・設置する／インストールする			
+215	install	取り付ける・設置する／インストールする		Air conditioners sold on Amazon must be \enword{install}ed by yourself or by a contractor you arrange yourself.	Amazonで販売されているエアコンは、自分で\jpword{設置する}{}か、自分で業者を手配する必要があります。
 216					
 217					
 218					
-219	introduce	紹介する／導入する／売り出す・発売する			
+219	introduce	紹介する／導入する／売り出す・発売する		Lawson announced that it will \enword{introduce} an automated cooking robot at its Kita-Otsuka 1-chome store.	ローソンは、北大塚一丁目店に自動調理ロボットを\jpword{導入する}{}と発表しました。
 220					
 221					
-222	extend	延長する／広がる・広げる／与える・伝える			
+222	extend	延長する／広がる・広げる／与える・伝える		Since some students were unable to view the video, I have \enword{extend}ed the deadline for submitting the assignment.	一部の学生が動画を視聴できなかったため、課題の提出期限を\jpword{延長}{する}しました。
 223					
 224					
 225					
-226	afford	余裕がある・与える			
+226	afford	余裕がある・与える		We don't \enword{afford} to repair everything for next time.	次回のためにすべてを修理する\jpword{余裕}{がある}はありません。
 227					
 228					
 229					
@@ -235,14 +235,14 @@
 234					
 235					
 236					
-237	establishment	設立・施設			
+237	establishment	設立・施設		Work experience took place at business \enword{establishment}s in the city.	市内の事業\jpword{施設}{（事業所）}で職業体験が行われました。
 238					
-239	square	正方形・広場・平方			
+239	square	正方形・広場・平方		The redevelopment of the station includes the creation of a \enword{square} where residents can interact.	駅の再開発には、住民が交流できる\jpword{広場}{}を整備することが含まれます。
 240					
 241					
 242					
 243					
-244	room	部屋／空間・スペース／余地・可能性			
+244	room	部屋／空間・スペース／余地・可能性		There is no \enword{room} for pity.	哀れみの\jpword{余地}{}はない。
 245					
 246					
 247					
@@ -253,14 +253,14 @@
 252					
 253					
 254					
-255	fine	立派な・申し分ない／晴れた・元気な／細かい／／罰金／／罰金を科する			
+255	fine	立派な・申し分ない／晴れた・元気な／細かい／／罰金／／罰金を科する		Smoking around stations in this city is subject to \enword{fine}s.	この市の駅周辺での喫煙は\jpword{罰金}{}が科せられます。
 256					
-257	balance	はかり・残高・未払い額／／バランスをとる			
+257	balance	はかり・残高・未払い額／／バランスをとる		You need to pay the remaining \enword{balance}.	\jpword{差額}{}を支払う必要があります
 258					
 259					
 260					
 261					
-262	exhaust	疲れさせる・使い果たす			
+262	exhaust	疲れさせる・使い果たす		I am \enword{exhaust}ed after finishing my linear algebra assignment.	線形代数の課題を終えて、私はとても\jpword{疲れ}{させる}ました。
 263					
 264					
 265					
@@ -270,14 +270,14 @@
 269					
 270					
 271					
-272	fare	運賃・食事			
+272	fare	運賃・食事		The \enword{fare} for this bus is a flat rate regardless of distance.	このバスの\jpword{運賃}{}は、距離に関わらず一律料金です。
 273					
 274					
 275					
 276					
 277					
 278					
-279	oversight	監督・管理／見落とし・ミス			
+279	oversight	監督・管理／見落とし・ミス		A problem occurred as a result of a decision made without \enword{oversight}.	\jpword{監督}{}なしの判断の結果として問題が発生しました。
 280					
 281					
 282					
@@ -291,7 +291,7 @@
 290					
 291					
 292					
-293	prototype	試作品・原型／／試作品をつくる			
+293	prototype	試作品・原型／／試作品をつくる		Rapidas has released a \enword{prototype} of a \SI{2}{nm} semiconductor wafer.	ラピダスは\SI{2}{nm}の半導体ウエハの\jpword{試作品}{}を発表した。
 294					
 295					
 296					
@@ -300,12 +300,12 @@
 299					
 300					
 301					
-302	ship	配送する・発送する			
+302	ship	配送する・発送する		We are unable to \enword{ship} products due to heavy rain.	大雨のため商品の\jpword{発送}{}ができません。
 303					
 304					
 305					
 306					
-307	studio	仕事場・スタジオ			
+307	studio	仕事場・スタジオ		These are the \enword{studio}s of famous artists.	これらは著名なアーティストの\jpword{工房}{}です。
 308					
 309					
 310					
@@ -314,14 +314,14 @@
 313					
 314					
 315					
-316	claim	主張する／要求する・自分のものだと言う			
+316	claim	主張する／要求する・自分のものだと言う		They \enword{claim} that sodium chloride is harmful.	彼らは、塩化ナトリウムが有害だと\jpword{主張}{する}している。
 317					
 318					
 319					
-320	suite	一続きの部屋・スイートルーム／一式・一組			
+320	suite	一続きの部屋・スイートルーム／一式・一組		The hotel offers luxurious \enword{suite}s with ocean views.\footnotemark[1]	そのホテルはオーシャンビューの豪華な\jpword{スイートルーム}{}を提供しています。
 321					
 322					
-323	cooperation	協力			
+323	cooperation	協力		Thank you very much for your \enword{cooperation} in this survey.	調査にご\jpword{協力}{}いただき、ありがとうございました。
 324					
 325					
 326					
@@ -331,20 +331,20 @@
 330					
 331					
 332					
-333	reminder	思い出させるもの・リマインダー			
+333	reminder	思い出させるもの・リマインダー		As a \enword{reminder}, you have not yet returned the 10 yen.	\jpword{改めてお伝え}{するもの}しますが、まだ10円を返していただいていません。
 334					
 335					
 336					
-337	available	スタンバイOK｜利用できる／／手に入る／／都合がつく・空いている			
+337	available	スタンバイOK｜利用できる／／手に入る／／都合がつく・空いている		This content is also \enword{available} for the deaf.	このコンテンツは耳が不自由な方にも\jpword{利用可能}{}です。
 338					
 339	leave	ほったらかす｜残す・置き忘れる／／出発する／／預ける・任せる／／休暇／／許可			
-340	charge	プレッシャーをかける｜請求する／料金／／非難（する）／／委ねる／責任／／充電（する）			
+340	charge	プレッシャーをかける｜請求する／料金／／非難（する）／／委ねる／責任／／充電（する）		You should \enword{charge} him for the electricity.	彼に電気代を\jpword{請求す}{る}べきだ。
 341					
 342					
-343	arrangement	きちんと並べること｜配置／／取り決め・手配			
+343	arrangement	きちんと並べること｜配置／／取り決め・手配		We made travel \enword{arrangement}s with a different agency than the one we used last year.	昨年とは別の業者に旅行の\jpword{手配}{}を依頼した。
 344					
 345					
-346	order	上から下への順番｜順序／／秩序／／整頓／／命令／／注文３			
+346	order	上から下への順番｜順序／／秩序／／整頓／／命令／／注文		display items in reverse \enword{order}	表示項目を逆\jpword{順}{}で表示する
 347					
 348					
 349					
@@ -360,7 +360,7 @@
 359					
 360					
 361					
-362	term	限られた一定空間｜期間／／用語／／条件(terms)間柄(terms)			
+362	term	限られた一定空間｜期間／／用語／／条件(terms)間柄(terms)		dictate surrender \enword{terms} to a defeated enemy	敗北した敵に降伏\jpword{条件}{}を指示する
 363					
 364					
 365					
@@ -368,14 +368,14 @@
 367					
 368					
 369					
-370	object	物を投げつける｜物／／対象／目的／／目的語／／反射する			
+370	object	物を投げつける｜物／／対象／目的／／目的語／／反射する		No one can \enword{object} to his opinion, so this meeting is meaningless.	彼の意見に誰も\jpword{反対}{する}できないため、この会議は意味がない。
 371					
-372	wear	すり減らす｜着る・身に着けている／／すり減らす／摩耗／／疲れされる			
+372	wear	すり減らす｜着る・身に着けている／／すり減らす／摩耗／／疲れされる		These tires can be reused by replacing the surface when they become \enword{worn}.	このタイヤは\jpword{摩耗}{した}際に表面を交換することで再利用可能です。
 373					
 374					
 375					
 376					
-377	practice	（何度も）実行する｜実行（する）／／習慣的に行う／習慣／／（医師／弁護士が）開業する／業務／診療所／／練習（する）			
+377	practice	（何度も）実行する｜実行（する）／／習慣的に行う／習慣／／（医師／弁護士が）開業する／業務／診療所／／練習（する）		She is \enword{practicing} the health methods she saw in the video.	彼女は動画で見た健康法を\jpword{実践している}{}。
 378					
 379					
 380					
@@ -383,7 +383,7 @@
 382					
 383					
 384					
-385	stage	立っている場所｜舞台／／段階・時期／／主催する・計画する			
+385	stage	立っている場所｜舞台／／段階・時期／／主催する・計画する		That method is not appropriate at this \enword{stage}	この\jpword{段階}{}では、その方法は適切ではありません。
 386					
 387					
 388					
@@ -398,7 +398,7 @@
 397					
 398					
 399					
-400	deserve	値する			
+400	deserve	値する		He \enword{deserved} to be arrested.	彼は逮捕\jpword{されて当然}{}でした。
 401					
 402					
 403					
