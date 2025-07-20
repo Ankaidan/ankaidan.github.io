@@ -140,7 +140,7 @@ function nJtoE(num, ans, w1, w2, w3, w4, cor)
             if row[5] == "" then
                 output = output .. row[2] .. "}{" .. row[3]
             else
-                output = output .. string.gsub(row[5],"\\enword{.*}","\\blank") .. "}{" .. string.gsub(row[6], "\\jpword{([^}]*)}{[^}]*}", "%1", 1)
+                output = output .. string.gsub(row[5],"\\enword{.*}","\\blank ") .. "}{" .. string.gsub(row[6], "\\jpword{([^}]*)}{[^}]*}", "%1", 1)
             end
             output = output.."}{"..w1.."}{"..w2.."}{"..w3.."}{"..w4.."}{"..cor.."}{"
             if ans == cor then
@@ -159,6 +159,11 @@ function nEW(num, ans, tf, comm, scale)
     local csv_file = "./files/kamitango.tsv"
     local csv_data = csv2list(csv_file)
     local mkd_ans = ans
+    local lf = ""
+    if(scale == "-1") then
+      lf = "\\\\"
+      scale = "1"
+    end
     local output = "\\EW{\\scalebox{"..scale.."}[1]{"
     for i, row in ipairs(csv_data) do
         if row[1] == num then
@@ -175,9 +180,9 @@ function nEW(num, ans, tf, comm, scale)
             end
             mkd_ans = mkd_ans.."\\comm{"..comm.."}"
             if row[5] == "" then
-                output = output .. row[2] .. "}}{" .. row[3].."}{"..mkd_ans.."}{"..num.."}"
+                output = output .. row[2] .. "}"..lf.."}{\\scalebox{"..scale.."}[1]{" .. row[3].."}}{"..mkd_ans.."}{"..num.."}"
             else
-                output = output .. string.gsub(row[5],"\\enword{(.).*}","\\blank[%1]") .. "}}{" .. string.gsub(row[6], "\\jpword{([^}]*)}{([^}]*)}", "%1", 1).."}{"..mkd_ans.."}{"..num.."}"
+                output = output .. string.gsub(row[5],"\\enword{(.).*}","\\blank[%1]").. "}"..lf.."}{\\scalebox{"..scale.."}[1]{" .. string.gsub(row[6], "\\jpword{([^}]*)}{([^}]*)}", "%1", 1).."}}{"..mkd_ans.."}{"..num.."}"
             end
             break
         end
