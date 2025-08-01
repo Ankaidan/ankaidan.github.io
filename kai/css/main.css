@@ -106,3 +106,7 @@ summary:hover {
 details {
   padding-left: 2em;
 }
+
+h4 {
+  color: #ffff00;
+}
