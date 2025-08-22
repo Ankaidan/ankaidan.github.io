@@ -15,7 +15,7 @@ header {
 th,td {
   border: solid 1px;
   padding:0px 5px;
-  text-align: left;
+  text-align: center;
   img.status{
     margin-bottom: -8px;
     margin-top: 0px;
@@ -32,10 +32,69 @@ table {
 img.symbol{
   height: 1.0rem;
   vertical-align:text-bottom;
+  padding-bottom: 0.3ex;
 }
 
 body.index{
   img.symbol{
     height: 1.2rem;
   }
+}
+
+td.name{
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  a:link {color: #000000;text-decoration: none;}
+  a:visited {color: #333333;text-decoration: none;} 
+  a:hover {color: #8899ff;text-decoration: underline;} 
+  a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .bar{
+    display: block;
+    margin: 0px 5px;
+    padding-top: 0px;
+  }
+  .b span{
+    display: inline-block;
+    text-align-last: justify;
+    margin: auto;
+    width: 2.8em;
+  }
+  .c span{
+    display: inline-block;
+    text-align-last: justify;
+    margin: auto;
+    width: 3.5em;
+  }
+  .f{
+    font-size: x-small;
+  }
+  .red{
+    color: red !important;
+  }
+  img.symbol{
+    height: 1.0rem;
+    vertical-align:text-bottom;
+    padding-bottom: 0.3ex;
+    padding-right: 0.1rem;
+    margin-left: -1.1rem;
+    margin-right: 0.1rem;
+  }
+  img.symbols{
+    height: 1.0rem;
+    vertical-align:text-bottom;
+    padding-bottom: 0.3ex;
+    padding-right: 0.1rem;
+    margin-left: -2.1rem;
+    margin-right: 1rem;
+  }
+}
+
+.transfer{
+  font-size: x-small;
 }
