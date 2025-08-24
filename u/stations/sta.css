@@ -87,14 +87,14 @@ td.name{
   }
   img.symbol{
     height: 1.0rem;
-    vertical-align:text-bottom;
+    vertical-align:middle;
     padding-right: 0.1rem;
     margin-left: -1.1rem;
     margin-right: 0.1rem;
   }
   img.symbols{
     height: 1.0rem;
-    vertical-align:text-bottom;
+    vertical-align:middle;
     padding-bottom: 0.3ex;
     padding-right: 0.1rem;
     margin-left: -2.1rem;
@@ -102,7 +102,7 @@ td.name{
   }
   img.symbolss{
     height: 1.0rem;
-    vertical-align:text-bottom;
+    vertical-align:middle;
     padding-bottom: 0.3ex;
     padding-right: 0.1rem;
     margin-left: -3.1rem;
