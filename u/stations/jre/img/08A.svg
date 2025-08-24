@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70" height="30" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="b" x1="35" x2="35" y1="10" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#e6001a" offset="0"/><stop stop-color="#cf1126" offset="1"/></linearGradient></defs><path d="m30 0h10v30h-10z" fill="url(#b)" style="paint-order:fill markers stroke"/></svg>
