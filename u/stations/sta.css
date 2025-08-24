@@ -47,16 +47,12 @@ td.name{
   text-align: center;
   margin: auto;
   a:link {color: #000000;text-decoration: none;}
-  a:visited {color: #333333;text-decoration: none;} 
+  a:visited {color: #666666;text-decoration: none;} 
   a:hover {color: #8899ff;text-decoration: underline;} 
-  a{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
+
   .bar{
     display: block;
-    margin: 0px 5px;
+    margin: 0px auto;
     padding-top: 0px;
   }
   .b span{
@@ -71,8 +67,20 @@ td.name{
     margin: auto;
     width: 3.5em;
   }
-  .f{
-    font-size: x-small;
+  .f span{
+    display: inline-block;
+    margin: -0.8em;
+    transform: scale(0.78, 1);
+  }
+  .g span{
+    display: inline-block;
+    margin: -1.1em;
+    transform: scale(0.75, 1);
+  }
+  .h span{
+    display: inline-block;
+    margin: -1.3em;
+    transform: scale(0.7, 1);
   }
   .red{
     color: red !important;
@@ -80,7 +88,6 @@ td.name{
   img.symbol{
     height: 1.0rem;
     vertical-align:text-bottom;
-    padding-bottom: 0.3ex;
     padding-right: 0.1rem;
     margin-left: -1.1rem;
     margin-right: 0.1rem;
@@ -92,6 +99,14 @@ td.name{
     padding-right: 0.1rem;
     margin-left: -2.1rem;
     margin-right: 1rem;
+  }
+  img.symbolss{
+    height: 1.0rem;
+    vertical-align:text-bottom;
+    padding-bottom: 0.3ex;
+    padding-right: 0.1rem;
+    margin-left: -3.1rem;
+    margin-right: 2rem;
   }
 }
 
