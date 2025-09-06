@@ -1,0 +1,57 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{listings,jvlisting}
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\small\itshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0\zw,
+  xleftmargin=3\zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1\zw,
+  lineskip=-0.5ex
+}
+\begin{document}
+\section{補足情報}
+ラズパイのユーザ名、パスワード、ホスト名はすべて``tbw''.
+\section{追加で行ったこと}
+\subsection{VNC接続}
+\verb|sudo raspi-config|中で
+3. Interface Options $\to$ I3. VNC $\to$ enable
+としてVNCを有効化する。そして、\verb|/etc/wayvnc/config|の2--3行目を以下のように書き換える。
+
+\begin{lstlisting}[caption={/etc/wayvnc/config （変更前）}]
+use_relative_paths=true
+address=::
+enable_auth=true
+enable_pam=true
+private_key_file=tls_key.pem
+certificate_file=tls_cert.pem
+rsa_private_key_file=rsa_key.pem
+\end{lstlisting}
+\begin{lstlisting}[caption={/etc/wayvnc/config （変更後）}]
+use_relative_paths=true
+address=localhost
+enable_auth=false
+enable_pam=false
+private_key_file=tls_key.pem
+certificate_file=tls_cert.pem
+rsa_private_key_file=rsa_key.pem
+\end{lstlisting}
+さらに、\verb|/etc/hosts|と\verb|/etc/hostname|のホスト名をtbw.localに変更する。
+これで、Remminaなどからssh経由でVNC接続できる\cite{sshVNC}。
+
+
+\begin{thebibliography}{9}
+  \bibitem{sshVNC}``試行錯誤な日々: Raspberry Piにssh経由でVNC接続''. 2024/12/22. \url{https://asukiaaa.blogspot.com/2024/12/vnc-connect-to-raspberry-pi-via-ssh-tunnel.html} (2025/9/6)
+\end{thebibliography}
+\end{document}
