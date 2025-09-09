@@ -108,8 +108,32 @@ td.name{
     margin-left: -3.1rem;
     margin-right: 2rem;
   }
+  img.ssymbol{
+    height: 1.0rem;
+    vertical-align:middle;
+    padding-left: 0.1rem;
+    margin-right: -1.1rem;
+    margin-left: 0.1rem;
+  }
 }
 
 .transfer{
   font-size: x-small;
+}
+
+.line{
+  padding: 0px 30px;
+}
+
+.num_bar {
+  height: 0.7rem;
+  align-items: center;
+  background-color: var(--color);
+  margin: 0;
+  padding: 0;
+  .varsymbol {
+    height: 0.7rem;
+    vertical-align: text-top;
+    padding: 0;
+  }
 }
