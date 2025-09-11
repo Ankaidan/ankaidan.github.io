@@ -147,14 +147,13 @@ td.tokyu {
 }
 
 .num_bar {
-  height: 0.7rem;
-  align-items: center;
+  font-size: 0%;
+  height: 0.6rem;
   background-color: var(--color);
   margin: 0;
-  padding: 0;
+  padding: 1px;
   .varsymbol {
-    height: 0.7rem;
-    vertical-align: text-top;
+    height: 0.6rem;
     padding: 0;
   }
 }
