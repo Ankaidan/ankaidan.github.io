@@ -97,7 +97,7 @@
 
 %\nJtoE{<番号>}{<受験者の解答>}{単語(rand)}{単語(rand)}{単語(rand)}{単語(rand)}{<正答>}
 % \JtoE{<英語例文>}{<和訳>}{単語(rand)}{単語(rand)}{単語(rand)}{単語(rand)}{<正答>}{<受験者の解答>}{<番号>}
-\newcommand{\nJtoE}[7]{\luadirect{nJtoE("#1","#2","#3","#4","#5","#6","#7")}}
+\newcommand{\nJtoE}[8][1]{\luadirect{nJtoE("#2","#3","#4","#5","#6","#7","#8","#1")}}
 \newcommand{\nEW}[5][1]{\luadirect{nEW("#2","#3","#4","#5","#1")}} %(番号、受験者の解答、T/F、コメント)%正答
 \newcommand{\nEtoJ}[5][1]{\luadirect{nEtoJ("#2","#3","#4","#5","#1")}} %(番号、受験者の解答、T/F、コメント)%正答
 
@@ -130,17 +130,22 @@ function csv2list(filepath)
 end
 
 --ここからメイン
-function nJtoE(num, ans, w1, w2, w3, w4, cor)
+function nJtoE(num, ans, w1, w2, w3, w4, cor, scale)
     local num_index = 0
     local csv_file = "./files/kamitango.tsv"
     local csv_data = csv2list(csv_file)
+    local lf = ""
+    if(scale == "-1") then
+      lf = "\\\\"
+      scale = "1"
+    end
     local output = "\\JtoE{"
     for i, row in ipairs(csv_data) do
         if row[1] == num then
             if row[5] == "" then
-                output = output .. row[2] .. "}{" .. row[3]
+                output = output .. row[2] .. "}"..lf.."{" .. row[3]
             else
-                output = output .. string.gsub(row[5],"\\enword{.*}","\\blank ") .. "}{" .. string.gsub(row[6], "\\jpword{([^}]*)}{[^}]*}", "%1", 1)
+                output = output .. string.gsub(row[5],"\\enword{.*}","\\blank ") .. ""..lf.."}{" .. string.gsub(row[6], "\\jpword{([^}]*)}{[^}]*}", "%1", 1)
             end
             output = output.."}{"..w1.."}{"..w2.."}{"..w3.."}{"..w4.."}{"..cor.."}{"
             if ans == cor then
