@@ -93,6 +93,10 @@ td.name{
   .red{
     color: red !important;
   }
+  img.nsymbol{
+    height: 1.0rem;
+    vertical-align:middle;
+  }
   img.symbol{
     height: 1.0rem;
     vertical-align:middle;
@@ -136,7 +140,12 @@ td.tokyu {
   a:link {color: #fff;text-decoration: none;}
   a:visited {color: #999;text-decoration: none;} 
   a:hover {color: #89f;text-decoration: underline;}
-
+}
+td.tokyu {
+  background-image: url();
+  a:link {color: #fff;text-decoration: none;}
+  a:visited {color: #999;text-decoration: none;} 
+  a:hover {color: #89f;text-decoration: underline;}
 }
 .transfer{
   font-size: x-small;
