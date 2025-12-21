@@ -3,8 +3,8 @@
 import csv
 import random
 
-RANGE_MIN=401
-RANGE_MAX=600
+RANGE_MIN=601
+RANGE_MAX=800
 
 JtoE=5
 EtoJ=20
